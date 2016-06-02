@@ -1,0 +1,102 @@
+.experiences {
+	position: relative;
+	margin: 200px auto 0;
+}
+
+#works a {
+	display: block;
+	transition: all .2s ease;
+}
+
+#works:hover a {
+	opacity: .2;
+}
+
+#works:hover .work_line:hover a:hover {
+	opacity: 1;
+}
+
+.work_line,.work_line_first {
+	border-top: 1px solid #eee;
+	width: 100%;
+	height: 120px;;
+	animation-fill-mode: both;
+	animation-delay: 1.5s;
+}
+
+.work_line a {
+	text-decoration: none;
+}
+
+.selected_work_title {
+	line-height: 120px;
+	float: left;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #111;
+}
+
+
+.project_title {
+	line-height: 120px;
+	float: left;
+	font-weight: 600;
+	font-size: 24px;
+	text-align: left;
+	color: #111;
+}
+
+.project_info {
+	line-height: 120px;
+	padding-left: 40%;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: left;
+	color: #666;
+}
+
+@media screen and (max-width:768px) {
+	.experiences {
+		margin-top: 120px;
+	}
+
+	.work_line,.work_line_first {
+		height: 80px;
+	}
+
+	.project_info,.project_title {
+		line-height: 80px;
+		font-size: 16px;
+	}
+	.selected_work_title {
+		line-height: 80px;
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width :1824px) {
+	.selected_work_title {
+		line-height: 160px;
+		font-size: 30px;
+	}
+
+	.experiences {
+		margin-top: 380px;
+	}
+
+	.work_line,.work_line_first {
+		height: 160px;
+	}
+
+	.project_title	{
+		line-height: 160px;
+		font-size: 32px;
+	}
+
+	.project_info {
+		line-height: 160px;
+		font-size: 28px;
+	}
+}

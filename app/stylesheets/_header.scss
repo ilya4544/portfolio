@@ -1,0 +1,103 @@
+header {
+	position: relative;
+	margin: 2% auto 0;
+	background: #fff;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    margin: 0 auto;
+    padding-top: 2%;
+    top: 0;
+    z-index: 1;
+    opacity: .9;
+}
+
+.navigation {
+	height: 25px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navigation ul li {
+	width: auto;
+	float: left;
+	display: inline;
+	margin-left: 40px;
+}
+
+.navigation li a {
+	font-weight:500;
+	font-size: 12px;
+	text-align: left;
+	letter-spacing: 3px;
+	color: #111;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.navigation li a:hover {
+	text-decoration: line-through;
+}
+
+.logo {
+	font-weight:600;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-align: left;
+	text-transform: uppercase;
+
+	height: 25px;
+
+	float: left;
+
+	animation-delay: 0.2s;
+}
+
+
+
+.nav {
+	float: right;
+	margin: 0 auto;
+	animation-delay: 0.2s;
+	display: flex;
+    padding: 0;
+}
+
+
+@media screen and (max-width:768px) {
+	.logo {
+		width: 100px;
+		height: 25px;
+	}
+	
+	header {
+		width: 100%;
+		margin: 5% auto 0;
+	}
+
+	.navigation ul li {
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (min-width :1824px) {
+	.logo {
+		font-size: 24px;
+		width: 280px;
+		height: 25px;
+
+	}
+
+	.navigation {
+		height: 50px;
+	}
+
+	.navigation ul li {
+		margin-left: 40px;
+		margin-top: 5px
+	}
+
+	.navigation li a {
+		font-size: 16px;
+	}
+}

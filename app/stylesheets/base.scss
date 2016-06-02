@@ -1,0 +1,89 @@
+@import 'header';
+@import 'hero';
+@import 'about';
+@import 'skills';
+@import 'experiences';
+@import 'education';
+@import 'footer';
+
+@import 'animations';
+
+
+html {
+	text-rendering: optimizeLegibility !important;
+}
+
+body {
+	margin: 0;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+::selection {
+	background: #000;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #111;
+}
+
+.no_border {
+	border-bottom: none;
+}
+
+.link {
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+	color: #111;
+}
+
+.link:hover {
+	text-decoration: line-through;
+}
+
+.section-name {
+	line-height: 120px;
+ 	font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    color: #111;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+section {
+	width: 70%;
+	padding-top: 40px;
+}
+
+@media only screen and (min-width :1824px) {
+	section {
+		width: 60%;
+	}
+
+	.link {
+		font-size: 28px;
+	}
+
+	.section-name {
+		line-height: 160px;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	section {
+		width: 90%;
+	}
+
+	.section-name {
+
+	}
+}

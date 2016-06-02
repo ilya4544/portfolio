@@ -1,0 +1,97 @@
+header
+  section.navigation
+    .logo.animated.fadeInUp Ilya Lyamkin
+    ul.nav.animated.fadeInUp
+      li
+        a(data-scroll='', href='#about-section') About
+      li
+        a(data-scroll='', href='#skills-section') Skills
+      li
+        a(data-scroll='', href='#experiences-section') Experience
+      li
+        a(data-scroll='', href='#education-section') Education
+section.hero
+  .title
+    .line.animated.fadeInLeft Front End
+    .line.animated.fadeInRight
+      | Developer
+      span.blinking-cursor |
+.arrow-wrapper.animated.fadeInUp
+  a.arrow-wrap(data-scroll='', href='#about-section')
+    .arrow
+section.about(id='about-section')
+  .section-name About me
+  .about-text.wow.slideInLeft
+    p.
+      I'm a 20 years old Full Stack Developer from Saint-Petersburg (Russia). I love everything that has to
+      do with Web design & development and I feel a true devotion for creating something new and important.
+    p.
+      I have 5 years of experience working as a freelancer and working for a company, but I’m ready for
+      visiting other countries & work for any software company! I love working with people, specially if
+      they have the same passion I have for what they do.
+    p.
+      Why don't we work together? Go futher down to see why I am the man you need to hire!
+section.skills(id='skills-section').wow.slideInLeft
+  .skills-header
+    .section-name Skills in 
+    .select-box
+      select(id='select-skills')
+        each category in locals.skills
+          option= category.name
+  each category in locals.skills
+    .skills-list(id=category.name)
+      each skill in category.skills
+        .skill
+          .skill-title= skill.name
+          .skill-value
+            - for (var i = 0; i < 10; i++)
+                if i < skill.value
+                  .bullet.active
+                else
+                  .bullet
+section.experiences(id='experiences-section')
+  .section-name Experience
+  #works.wow.slideInLeft
+    .work_line.animated.fadeInUp
+      a(href='#')
+        .project_title MEYVN Digital
+        .project_info Front End Developer
+    .work_line.animated.fadeInUp
+      a(href='#')
+        .project_title T-System
+        .project_info Software Engineer
+    .work_line.animated.fadeInUp
+      a(href='#')
+        .project_title CVPicker
+        .project_info Founder & developer
+    .work_line.no_border.animated.fadeInUp
+      a(href='#')
+        .project_title Experiments
+        .project_info Selected works
+section.education(id='education-section')
+  .section-name Education
+  .cd-timeline
+    .cd-timeline-block
+      .cd-timeline-img.itmo
+      .cd-timeline-content.wow.slideInLeft(data-wow-duration='1s')
+        h2 Bachelor of Computer Science
+        p.
+          ITMO University
+        span.cd-date 2013 &mdash; Now
+    .cd-timeline-block
+      .cd-timeline-img.lyceum
+      .cd-timeline-content.wow.slideInRight(data-wow-duration='1s')
+        h2 High school - Physics and Math class
+        p.
+          Lyceum
+        span.cd-date 2009 &mdash; 2013
+section.footer
+  .footer_inner
+    .social
+      a(href='https://www.facebook.com/lyamkin.ilya', target='_blank') Facebook
+      a(href='https://ru.linkedin.com/in/ilyalyamkin', target='_blank') LinkedIn
+      a(href='https://github.com/ilya4544', target='_blank') GitHub
+    .email
+      | Get in touch. Send an 
+      a(href='mailto:ilya.lyamkin@gmail.com') Email
+      br

@@ -1,0 +1,17 @@
+.about {
+    position: relative;
+    margin: 200px auto 0;
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    color: #666;
+}
+
+@media only screen and (min-width :1824px) {
+	.about-text {
+		font-size: 32px;
+	}
+}
