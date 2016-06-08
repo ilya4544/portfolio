@@ -7,7 +7,7 @@ class SkillsManager {
 
 	changeCategory(element) {
 		const allCategories = document.getElementsByClassName('skills-list');
-		[].forEach.call(allCategories, function(item) {
+		[].forEach.call(allCategories, (item) => {
 			item.style.display = 'none';
 		});
 		document.getElementById(element.currentTarget.value).style.display = 'block';

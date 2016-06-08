@@ -3,10 +3,13 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './app/app.js',
+    entry:  {
+       app: './app/app.js',
+       works: './app/works.js'
+    },
     output: {
         path: './dist',
-        filename: 'bundle.js',
+        filename: '[name].js',
     },
     module: {
         loaders: [
@@ -21,5 +24,14 @@ module.exports = {
     postcss: function() {
         return [autoprefixer];
     },
-    plugins: [new HtmlWebpackPlugin()]
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Ilya Lyamkin | Resume',
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'works.html',
+            chunks: ['works']
+        })
+    ]
 }

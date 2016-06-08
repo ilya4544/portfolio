@@ -1,5 +1,6 @@
 import index from './template.jade'
 import SkillsManager from './skillsmanager.js'
+import ExperienceManager from './experiencemanager.js'
 import smoothScroll from 'smooth-scroll'
 import data from './data.json';
 import WOW from 'wow.js';
@@ -21,4 +22,5 @@ if (typeof document !== 'undefined') {
   wow.init();
   document.body.innerHTML = index(data);
   const sm = new SkillsManager();
+  const em = new ExperienceManager();
 }

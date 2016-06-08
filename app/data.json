@@ -117,5 +117,55 @@ export default {
 				}
 			]
 		}
+	],
+	"experience": [
+		{
+			"name": "MEYVN Digital",
+			"position": "Front End Developer",
+			"from": "Apr. 16",
+			"to": "Now",
+			"projects": [
+				{
+					"name": "The project for finding private tuition (tutormapper.com)",
+					"stack": "JQuery, HTML5/CSS3, Ruby on Rails, PostgreSQL"
+				},
+				{
+					"name": "Developing the recruitment solution (coachingassembly.com)",
+					"stack": "ReactJS, JS, Gulp, Ruby on Rails, HTML5/CSS3, PostgreSQL"
+				}
+			]
+		},
+		{
+			"name": "T-Systems",
+			"position": "Software Engineer",
+			"from": "Feb. 16",
+			"to": "Apr. 16",
+			"projects": [
+				{
+					"name": "The internal overtime management system",
+					"stack": "Ruby on Rails, Bootstrap, JQuery, Handsontable, Oracle"
+				},
+				{
+					"name": "The internal navigation system",
+					"stack": "Ruby on Rails, Javascript, HTML5/CSS3, JQuery, MySQL"
+				}
+			]
+		},
+		{
+			"name": "CVPicker",
+			"position": "Founder & developer",
+			"from": "Oct. 15",
+			"to": "Now",
+			"projects": [
+				{
+					"name": "SaaS platform makes recruitment simple",
+					"stack": "MeteorJS, Javascript, JQuery, WebRTC, MongoDB"
+				}
+			]
+		},
+		{
+			"name": "Experiments",
+			"position": "Selected works"
+		}
 	]
 };

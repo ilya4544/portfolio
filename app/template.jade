@@ -51,29 +51,21 @@ section.skills(id='skills-section').wow.slideInLeft
                   .bullet
 section.experiences(id='experiences-section')
   .section-name Experience
-  #works.wow.slideInLeft
-    .work-line.animated.fadeInUp
-      a(href='#')
-        .project-title MEYVN Digital
-        .project-info 
-          .position Front End Developer
-          .date Apr. 16 &mdash; Now
-    .work-line.animated.fadeInUp
-      a(href='#')
-        .project-title T-System
-        .project-info 
-          .position Software Engineer
-          .date Feb. 16 &mdash; Apr. 16
-    .work-line.animated.fadeInUp
-      a(href='#')
-        .project-title CVPicker
-        .project-info 
-          .position Founder & developer
-          .date Oct. 15 &mdash; Now 
-    .work-line.no_border.animated.fadeInUp
-      a(href='#')
-        .project-title Experiments
-        .project-info Selected works
+  if locals.experience.length > 0
+    #works.wow.slideInLeft
+      each work in locals.experience
+        - var countProjects = (work.projects) ? work.projects.length : 0
+        .work-line.animated.fadeInUp(data-length= countProjects)
+          .project-title= work.name
+          .project-info.active(id='0-'+work.name)
+            .position= work.position
+            .date #{work.from} &mdash; #{work.to}
+          if work.projects
+            each project, index in work.projects
+              .project-info(id=(index+1)+'-'+work.name)
+                .position= project.name
+                .date= project.stack
+            .arrow_next
 section.education(id='education-section')
   .section-name Education
   .cd-timeline
