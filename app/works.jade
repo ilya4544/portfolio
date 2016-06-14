@@ -1,1 +1,69 @@
-h1 Hello world!
+header
+  section.navigation
+    .logo.animated.fadeInUp Ilya Lyamkin
+    ul.nav.animated.fadeInUp
+      li
+        a(data-scroll='', href='#about-section') About
+      li
+        a(data-scroll='', href='#skills-section') Skills
+      li
+        a(data-scroll='', href='#experiences-section') Experience
+      li
+        a(data-scroll='', href='#education-section') Education
+section.hero
+  .title
+    .line.animated.fadeInLeft Selected
+    .line.animated.fadeInRight
+      | Projects
+      span.blinking-cursor |
+.arrow-wrapper.animated.fadeInUp
+  a.arrow-wrap(data-scroll='', href='#first-project')
+    .arrow
+section.project(id='first-project')
+  .project-name GuestGuru
+  .project-description
+    p.
+      GuestGuru introducing a new way to communicate between guests and hotels managers.
+    p.
+      Guest can use their favorite messenger to report an issue, send a request or leave a feedback.
+    p.
+      Hotel manager can see all the messages in the solid dashboard with categorization and sorting.
+    p.
+      This work has been made through AccorHotels Hackathon in 24h. Facebook Messenger and Telegram bots supported.
+  .project-media
+    article(id="guestguru")
+      section
+        img(src=require('./images/gg/gg.001.jpeg'))
+      section
+        img(src=require('./images/gg/gg.002.jpeg'))
+      section
+        img(src=require('./images/gg/gg.003.jpeg'))
+      section
+        img(src=require('./images/gg/gg.004.jpeg'))
+      section
+        img(src=require('./images/gg/gg.005.jpeg'))
+      section
+        img(src=require('./images/gg/gg.006.jpeg'))
+section.project
+  .project-name PhotoShoot
+  .project-description
+    p.
+      PhotoShoot is a app allow you to request a photographer with one click.
+    p.
+      You don't need to chatting with photographer more, just specify date, time, place and expected professional expereince. 
+    p.
+      Photographers can use simple dashboard to take an order or to upload photos to client.
+  .project-media
+    article(id="photoshoot")
+      section
+        img(src=require('./images/photoshoot/photoshoot.001.jpeg'))
+      section
+        img(src=require('./images/photoshoot/photoshoot.002.jpeg'))
+      section
+        img(src=require('./images/photoshoot/photoshoot.003.jpeg'))
+      section
+        img(src=require('./images/photoshoot/photoshoot.004.jpeg'))
+      section
+        img(src=require('./images/photoshoot/photoshoot.005.jpeg'))
+footer
+  a.center-link(href='index.html') Go back

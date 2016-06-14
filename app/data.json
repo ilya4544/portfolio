@@ -162,10 +162,6 @@ export default {
 					"stack": "MeteorJS, Javascript, JQuery, WebRTC, MongoDB"
 				}
 			]
-		},
-		{
-			"name": "Experiments",
-			"position": "Selected works"
 		}
 	]
 };

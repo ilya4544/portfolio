@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ilya Lyamkin",
-  "repository" : "https://github.com/ilya4544/portfolio.git",
+  "repository": "https://github.com/ilya4544/portfolio.git",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -26,6 +26,11 @@
     "webpack": "^2.1.0-beta.7"
   },
   "dependencies": {
+    "bespoke": "^1.1.0",
+    "bespoke-keys": "^1.1.0",
+    "bespoke-scale": "^1.0.1",
+    "bespoke-theme-cube": "^2.0.1",
+    "bespoke-touch": "^1.0.0",
     "file-loader": "^0.8.5",
     "wow.js": "^1.2.0",
     "wowjs": "^1.1.3"

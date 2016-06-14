@@ -4,6 +4,12 @@ class ExperienceManager {
 		[].forEach.call(nextProjects, (nextProject) => {
 			nextProject.addEventListener('click', this.moveProject, false);
 		});
+
+		document.getElementsByClassName("see-projects")[0].addEventListener('click', this.seeProjects, false);
+	}
+
+	seeProjects(element) {
+		window.location.href = 'works.html';
 	}
 
 	moveProject(element) {
