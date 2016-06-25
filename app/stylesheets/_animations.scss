@@ -1,8 +1,12 @@
 .blinking-cursor {
   font-weight: 100;
-  font-size: 180px;
+  font-size: 120px;
   color: #2E3D48;
   animation: 2s blink step-end infinite;
+
+  @media only screen and (min-width: 1824px) {
+    font-size: 180px;
+  }
 }
 
 @keyframes "blink" {
