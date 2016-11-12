@@ -21,17 +21,17 @@ section.hero
     .arrow
 section.about(id='about-section')
   .section-name About me
-  .about-text.wow.slideInLeft
+  .about-text(data-aos='fade-left')
     p.
-      I'm a 20 years old Full Stack Developer from Saint-Petersburg (Russia). I love everything that has to
+      I'm a #{locals.currentAge} years old Full Stack Developer from Saint-Petersburg (Russia). I love everything that has to
       do with Web design & development and I feel a true devotion for creating something new and important.
     p.
-      I have 5 years of experience working as a freelancer and working for a company, but I’m ready for
+      I have #{locals.yearsExperience} years of experience working as a freelancer and working for a company, but I’m ready for
       visiting other countries & work for any software company! I love working with people, specially if
       they have the same passion I have for what they do.
     p.
       Why don't we work together? Go futher down to see why I am the man you need to hire!
-section.skills(id='skills-section').wow.slideInLeft
+section.skills(id='skills-section', data-aos='fade-left')
   .skills-header
     .section-name Skills in 
     .select-box

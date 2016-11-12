@@ -7,19 +7,23 @@ export default {
 					"value": 10
 				},
 				{
+					"name": "React.js",
+					"value": 9
+				},
+				{
 					"name": "ES6",
+					"value": 8
+				},
+				{
+					"name": "Redux",
+					"value": 8
+				},
+				{
+					"name": "AngularJS",
 					"value": 6
 				},
 				{
 					"name": "Meteor.js",
-					"value": 10
-				},
-				{
-					"name": "React.js",
-					"value": 6
-				},
-				{
-					"name": "CofeeScript",
 					"value": 8
 				}
 			]
@@ -29,7 +33,7 @@ export default {
 			"skills": [
 				{
 					"name": "Gulp",
-					"value": 5
+					"value": 8
 				},
 				{
 					"name": "Webpack",
@@ -126,12 +130,16 @@ export default {
 			"to": "Now",
 			"projects": [
 				{
-					"name": "The project for finding private tuition (tutormapper.com)",
-					"stack": "JQuery, HTML5/CSS3, Ruby on Rails, PostgreSQL"
+					"name": "Social monitoring tool powered by machine learning",
+					"stack": "ReactJS, Redux, ES6, Gulp, HTML5/CSS3"
 				},
 				{
 					"name": "Developing the recruitment solution (coachingassembly.com)",
-					"stack": "ReactJS, JS, Gulp, Ruby on Rails, HTML5/CSS3, PostgreSQL"
+					"stack": "ReactJS, Flux, JS, Gulp, Ruby on Rails, HTML5/CSS3, PostgreSQL"
+				},
+				{
+					"name": "The project for finding private tuition (tutormapper.com)",
+					"stack": "JQuery, HTML5/CSS3, Ruby on Rails, PostgreSQL"
 				}
 			]
 		},
@@ -159,7 +167,7 @@ export default {
 			"projects": [
 				{
 					"name": "SaaS platform makes recruitment simple",
-					"stack": "MeteorJS, Javascript, JQuery, WebRTC, MongoDB"
+					"stack": "MeteorJS, AngularJS, WebRTC, MongoDB"
 				}
 			]
 		}
